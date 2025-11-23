@@ -11,7 +11,7 @@ function Home() {
 
         <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto'>
             <div className='p-6 bg-white shadow-md rounded-xl'>
-                <h2 className='text-gray-700 mt-2'>{students.lenght}</h2>
+                <h2 className='text-gray-700 mt-2'>{student.lenght}</h2>
                 <p className='text-gray-700 mt-2'>Registered Students</p>
             </div>
 
