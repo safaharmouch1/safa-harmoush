@@ -1,6 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import {Link , useParams } from 'react-router-dom';
 import students from "../data/students";
+import { Link } from 'react-router-dom';
 
 function StudentProfile() {
     const {id} = useParams();
@@ -14,6 +15,7 @@ function StudentProfile() {
         <div className='flex flex-col md:flex-row gap-8 items-center'>
             <img 
             src={'${student.name} avatar'}
+            alt='student'
             className='w-40 h-40 rounded-full object-cover shadow-md'
             onError={(e) => {
               e.currentTarget.src = 'https://ui-avatars.com/api/?name=${encodeURIComponent(student.name)}&background=6EE7B7&color=000&size=512';
