@@ -1,7 +1,4 @@
 import { getDefaultNormalizer } from "@testing-library/dom";
-import s1 from "../assets/student/s1.jpg";
-import s2 from "../assets/student/s2.jpg";
-import s3 from "../assets/student/s3.jpg";
 
 function Students(){
 
@@ -13,7 +10,7 @@ const student = [
         id: 1,
         name: "Safa Harmouch",
         email: "safa.harmouch@gmail.com",
-        photo: makeAvatar,
+        photo: makeAvatar ("safa harmouch"),
         courses: ["Web Development","Data Structures","AI Basic"],
         grades:[
             {course: "Web Development", grade: "A"},
@@ -25,7 +22,7 @@ const student = [
     id: 2,
     name:"Omar kenaan",
     email: "Omar.kenaan@gmail.com",
-    photo: makeAvatar,
+    photo: makeAvatar ("omar kenaan"),
     courses: ["Networks", "Databases"],
     grades: [{course:"Networks",grade: "A-"}],
     },
@@ -33,7 +30,7 @@ const student = [
         id: 3,
         name: "Mirriam Mellat",
         email: "mirriam.mellat@gmail.com",
-        photo: makeAvatar,
+        photo: makeAvatar ("mirriam mellat"),
         courses:[ "Operating Systems","Software engineering"],
         grades: [
             {course: "Software Engineering", grade:"B"},
