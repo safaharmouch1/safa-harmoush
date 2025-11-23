@@ -7,12 +7,18 @@ function StudentProfile() {
     const student = students.find((s) => s.id === parseInt(id));
 
     if (!student) return <h1 className='text-center text -xl mt-10'>Student not found</h1>;
+    const avatar = student.photo || 'https://ui-avatars.com/api/?name=${encodeURIComponent(student.name)}&background=0D8ABC&color=fff&size=512'
 
   return (
     <div className='max-w-4xl mx-auto p-8'>
-        <div className='flex gap-8 items-center'>
-            <img src={student.photo} alt='profile'
-            className='w-40 h-40 rounded-full object-cover shadow-md'/>
+        <div className='flex flex-col md:flex-row gap-8 items-center'>
+            <img 
+            src={'${student.name} avatar'}
+            className='w-40 h-40 rounded-full object-cover shadow-md'
+            onError={(e) => {
+              e.currentTarget.src = 'https://ui-avatars.com/api/?name=${encodeURIComponent(student.name)}&background=6EE7B7&color=000&size=512';
+            }}
+            />
 
 
             <div>
@@ -22,11 +28,16 @@ function StudentProfile() {
         </div>
 
         <h2 className='text-2xl font-bold text-blue-500 mt-8'>Enrolled Courses</h2>
-        <ul className='list-disc ml-6 mt-2 text-lg'>{student.courses.map((c,index) => (<li key={index}>{c}</li>))}
+        <ul className='list-disc ml-6 mt-2 text-lg'>
+          {student.courses.map((c,index) => 
+            (<li key={index}>{c}</li>))}
         </ul>
 
         <h2 className='text-2xl font-bold text-blue-500 mt-8'>Grades</h2>
-        <ul className='list-disc ml-6 mt-2 text-lg'>{student.grades.map((g,index) => (<li key={index}>{g.course}:{g.grade}</li>))}
+        <ul className='list-disc ml-6 mt-2 text-lg'>
+          {student.grades.map((g,index) => (
+            <li key={index}>{g.course}:{g.grade}</li>
+            ))}
         </ul>
       
     </div>
