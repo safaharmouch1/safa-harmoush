@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link , useParams } from 'react-router-dom';
 import students from "../data/students";
-import { Link } from 'react-router-dom';
+
 
 function StudentProfile() {
     const {id} = useParams();

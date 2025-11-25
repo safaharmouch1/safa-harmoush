@@ -8,7 +8,7 @@ import Courses from "./pages/Courses";
 import Contact from "./pages/Contact";
 import StudentProfile from "./pages/StudentProfile";
 
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {

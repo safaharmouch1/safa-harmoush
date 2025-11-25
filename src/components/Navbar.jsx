@@ -10,10 +10,10 @@ function Navbar() {
             <h1 className="text-2xl font-bold">Student Portal</h1>
              
              <ul className="flex gap-6 text-lg">
-                <li><link to="/" className="hover:text-gray-200">Home</link></li>
-                <li><link to="/About" className="hover:text-gray-200">About</link></li>
-                <li><link to="/courses" className="hover:text-gray-200">Courses</link></li>
-                <li><link to="/contact" className="hover:text-gray-200">Contact</link></li>
+                <li><Link to="/" className="hover:text-gray-200">Home</Link></li>
+                <li><Link to="/About" className="hover:text-gray-200">About</Link></li>
+                <li><Link to="/courses" className="hover:text-gray-200">Courses</Link></li>
+                <li><Link to="/contact" className="hover:text-gray-200">Contact</Link></li>
              </ul>
         </div>
     </nav>

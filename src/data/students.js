@@ -1,12 +1,13 @@
-import { getDefaultNormalizer } from "@testing-library/dom";
 import { Link } from "react-router-dom";
 
 function Students(){
 
 
 const makeAvatar =(name) =>
+   
     'https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=0D8ABC&color=fff&size=256';
-const student = [
+
+const students = [
     {
         id: 1,
         name: "Safa Harmouch",
