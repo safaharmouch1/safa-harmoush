@@ -4,10 +4,9 @@ function Students(){
 
 
 const makeAvatar =(name) =>
-   
     'https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=0D8ABC&color=fff&size=256';
 
-const students = [
+const Students = [
     {
         id: 1,
         name: "Safa Harmouch",

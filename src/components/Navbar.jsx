@@ -9,6 +9,7 @@ function Navbar() {
         <div className="container mx-auto flex justify-between items-center p-4">
             <h1 className="text-2xl font-bold">Student Portal</h1>
              
+             
              <ul className="flex gap-6 text-lg">
                 <li><Link to="/" className="hover:text-gray-200">Home</Link></li>
                 <li><Link to="/About" className="hover:text-gray-200">About</Link></li>
